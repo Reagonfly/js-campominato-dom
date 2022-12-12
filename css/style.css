@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   /* #font;*/
+   background: linear-gradient(-45deg, rgb(229, 255, 0), rgb(105, 0, 241), rgb(8, 253, 61));
+   background-size: 400% 400%;
+   width: 100vw;
+   height: 100vh;
+   animation: animate 15s ease infinite;
+}
+
+header,
+footer{
+    height: 100px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+select{
+    padding: 8px 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+main {
+    height: calc(100vh - 200px);
+    padding: 2rem 0;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+header .col{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .card{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+main .card{
+    width: 680px;
+    height: 680px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap row;
+    background-color: transparent;
+}
+
+.container-head{
+    height: 100%;
+}
+
+.play-btn{
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 1px solid lightgrey;
+    color: darkred;
+    cursor: pointer;
+    background: linear-gradient(-45deg, rgb(0, 255, 42), rgb(155, 78, 255), rgb(252, 249, 116));
+    background-size: 200% 200%;
+    animation: animate 15s ease infinite;
+}
+
+button:active{
+    border: 1px solid lightgrey;
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rebeccapurple;
+    color: #fff;
+    cursor: pointer;
+}
+
+.square.even{
+    background-color: aqua;
+    color: black;
+}
+
+.square.odd{
+    background-color: darkred;
+    color: black;
+}
+
+.mouseblock{
+    pointer-events: none;
+}
+
+.easy-field{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.normal-field{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.hard-field{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+@keyframes animate{ 
+    0% {
+        background-position:0% 50%;
+    }
+    50% {
+        background-position:100% 50%;
+    }
+    100% {
+        background-position:0% 50%;
+    }
+  }
